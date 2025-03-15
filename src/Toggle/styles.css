@@ -1,0 +1,49 @@
+:root {
+  --anim: cubic-bezier(0.55, 0, 0.1, 1);
+  --blue: #646cff;
+  --green: #2ecc71;
+  --grey: #bdc3c7;
+}
+
+.toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--grey);
+  border-radius: 16px;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+  height: 32px;
+  outline: none;
+  position: relative;
+  transition: background 0.2s var(--anim);
+  width: 56px;
+}
+
+.toggle::before {
+  background: white;
+  border-radius: 16px;
+  border: none;
+  content: "";
+  height: 26px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  transition: transform 0.2s var(--anim);
+  width: 26px;
+  z-index: 1;
+}
+
+/* Checked state */
+.toggle:checked {
+  background: var(--green);
+  border: 1px solid var(--green);
+}
+
+.toggle:checked::before {
+  transform: translateX(24px);
+}
+
+/* Accessible focus state */
+.toggle:focus-visible {
+  box-shadow: 0 0 0 2px var(--blue);
+}
