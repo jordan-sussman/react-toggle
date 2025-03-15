@@ -2,6 +2,8 @@
 
 React Toggle is an Apple styled checkbox toggle component for React.
 
+<img width="460" alt="Screenshot 2025-03-15 at 2 19 02 PM" src="https://github.com/user-attachments/assets/ec2cf589-5263-4020-9c73-14a45a253aad" />
+
 ## Usage
 
 ```jsx
